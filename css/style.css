@@ -1,0 +1,127 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;font-family: "微软雅黑";}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+
+a{text-decoration:none;color: #999999;}
+a:hover{text-decoration: none;color: red;}
+body{color: #999999;font-family: "微软雅黑";}
+ul,li{list-style:none}
+.bgColor{background-color: #F5F5F5}
+
+/*客服*/
+.qqservice{position: fixed;margin-top:10%;margin-left: 93%;}
+
+/*首页*/
+#index #myTab  a{border-radius: 0px;padding: 10px 4px;color: blue;}
+#index #myTab li:first-child{padding: 10px 15px;color: #000000;font-weight: 800;}
+#sort{box-sizing: border-box;margin: 0;padding: 0;}
+#sort .col-md-9{border: 1px solid #CCCCCC;}
+.header img{margin-top: -30px;padding-bottom:-30px;}
+.title1{height: 60px;background: url(../images/title.png) no-repeat ;box-sizing: border-box;padding: 10px 0 0 80px;background-size: 100% 80px;}
+.title2{height: 60px;background: url(../images/title.png) no-repeat ;box-sizing: border-box;padding: 10px 0 0 80px;background-size: 100% 80px;}
+.title3{height: 60px;background: url(../images/title.png) no-repeat ;box-sizing: border-box;padding: 10px 0 0 80px;background-size: 100% 80px;}
+.title h2{font-size: 1.5em;line-height: 30px;color: #000000;font-weight: bolder;-webkit-transform: skew(-15deg);-moz-transform: skew(-15deg);}
+.title p{font-size: 0.9em;color:#000000;font-weight: bolder;-webkit-transform: skew(-15deg);-moz-transform: skew(-15deg);}
+.container{width: 980px;}
+
+
+.index_picture img{width: 100%;height: 100%;margin-top: 30px;}
+.menu{border: 1px solid #CCCCCC;}
+.index_teacher_classification{border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;margin-top: 30px;}
+.media{border-bottom: 1px solid #CCCCCC;padding-bottom: 25px;}
+.media img{border-radius: 50%;border: 1px solid #CCCCCC;height: 120px;width: 120px;margin-right: 15px;}
+.media .media-body .media-heading span{font-size: 0.9em;}
+.media .media-body .media-heading span em{font-size: 1.3em;color: #000000;font-weight: bolder;margin-right: 5px;}
+.media .media-body h4{color: #000000;font-weight: bolder;}
+.media .media-body {line-height: 25px;}
+.media .media-body button{float: right;margin-top: -18px;border: none;padding: 8px;border-radius: 5px;background-color:#4CAE4C;}
+.media .media-body button a{color: #FFFFFF;}
+#task div{display: inline-block;margin: 5px 10px 25px 10px;}
+#task div a{color: #FFFFFF;}
+#task .student{background-color: #A94442;padding: 7px;border-top-left-radius: 20px;border-bottom-right-radius: 20px;}
+#task .teacher{background-color: #D58512;padding: 7px;border-bottom-left-radius: 20px;border-top-right-radius: 20px;}
+#list_menu {padding-right: 30px;}
+
+.index_book_btn {height: 50px;line-height: 50px;background: url(../images/teacher_list_bg_03.png) repeat-x;text-align: center;}
+.tab-content{margin-top: 15px;}
+.tel{margin-top:20px;margin-bottom: 10px;}
+.footer{width: 100%;text-align: center;margin: 20px 0 30px 0;}
+.footer p{font-size: 0.8em;margin: 10px;color: #5E5E5E;}
+.footer .menu {background-color: #DDDDDD;height: 30px;line-height: 30px;}
+.footer .menu a{padding: 5px;font-size: .9em;color: #5E5E5E;}
+
+/*登陆*/
+#login{width: 45%;margin: 0 auto;border: 1px solid #CCCCCC;margin-top: 70px;border-radius: 10px;box-shadow:7px 7px 10px #AFD9EE;}
+#login .tab-content{border: none;}
+#login .nav-tabs li a{border-top-left-radius: 10px;color: #000000;font-size: 1.2em;font-weight: 900;}
+#login .nav-tabs{background-color:#31B0D5;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+#login .form-group{color: #000000;}
+#login .pic {position: fixed;float: right;height: 11%;width: 11%;margin-top: 11%;right:24%;}
+#login .pic img{width: 100%;}
+#login .col-sm-10{padding-right: 14%;}
+
+/*注册*/
+#register{width: 55%;margin: 0 auto;border: 1px solid #CCCCCC;margin-top:40px;border-radius: 5px;box-shadow:7px 7px 10px #AFD9EE;}
+#register .col-sm-10{padding-right: 8%;}
+#register .tab-content{border: none;margin-top: 30px;}
+#register .nav-tabs li a{border-top-left-radius: 5px;color: #000000;font-size: 1.2em;font-weight: 900;}
+#register .nav-tabs{background-color:#31B0D5;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+#register .form-group{color: #000000;}
+
+/*预约*/
+#appointment .container{border-top-right-radius: 60px;box-shadow: 4px 4px 4px #4CAE4C;background-color: #FFFFFF;width: 60%;border: 2px solid #4CAE4C;box-sizing: border-box;padding: 40px;padding-right: 70px;margin-top: 30px;}
+#appointment .form-group .control-label{color: #000000;}
+.checkbox-inline label {width: 120px;}
+
+/*教师详情*/
+
+#teacher_detail {width: 70%;border: 1px solid #CCCCCC;margin-top: 20px;}
+.header_pic {height: 180px;width: 170px;border: 1px solid #CCCCCC;}
+.header_pic img{width: 100%;height: 100%;}
+#teacher_detail .row{border-bottom: 1px solid #CCCCCC;margin-bottom: 15px;padding-bottom: 10px;}
+#teacher_detail #menu {padding-bottom: 25px;padding-left: 15px;}
+#teacher_detail #menu p{margin-top: 7px;color: #3071A9;}
+#teacher_detail #menu h2{margin-bottom: 10px;color: #000000;font-weight: bolder;font-size: 2.0em;}
+#teacher_detail #menu strong{color: #000000;}
+#teacher_detail .row:first-child{background-color:#4CAE4C;margin-top: 0;color: #D5D5D5;height:30px;line-height: 30px;}
+#teacher_detail #home3 p{margin: 10px 15px 10px 15px;} 
+#teacher_detail #myTab li a{color: #000000;font-size: 1.1em;}
+#teacher_detail .col-md-12{margin-left: 10px;}
+#teacher_detail .col-md-12 h2{color: #000000;font-size: 1.1em;margin-bottom: 10px;}
+/*#teacher_detail #read {background-color: #D9EDF7;}*/
+#teacher_detail .read p{margin-top: 5px;}
+#teacher_detail button{padding: 10px 10px;margin: 10px 0 10px 10px;}
+#teacher_detail button a{color: #FFFFFF;}
+
+#teacher_detail #profile3 table{width: 100%;}
+#teacher_detail #profile3 table tr{border-bottom: 1px solid #CCCCCC;height: 40px;}
+#teacher_detail #profile3 table tr th{color: #888888;}
+#teacher_detail #messages3 {padding: 10px 20px 20px 20px;}
+#teacher_detail #messages3 table{width: 100%;text-align: center;}
+#teacher_detail #messages3 table th{text-align: center;}
+#teacher_detail #messages3 table tr{height: 25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

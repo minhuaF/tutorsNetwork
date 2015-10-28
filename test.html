@@ -1,0 +1,38 @@
+<head runat="server">
+	<title></title>
+	<script type="text/javascript">
+		function result(form) {
+			var a = document.getElementById("txt");
+			a.value = "";
+			for (var i = 0; i < form.elements.length; i++) {
+				var e = form.elements[i];
+				if (e.name == "checkbox" && e.checked == true) {
+					a.value = a.value + e.value + ","
+				}
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+	<form name="form1" method="post" action="">
+
+		a
+		<input type="checkbox" name="checkbox" value="a" onClick="result(this.form)"> b
+		<input type="checkbox" name="checkbox" value="b" onClick="result(this.form)"> c
+		<input type="checkbox" name="checkbox" value="c" onClick="result(this.form)"> d
+		<input type="checkbox" name="checkbox" value="d" onClick="result(this.form)"> e
+		<input type="checkbox" name="checkbox" value="e" onClick="result(this.form)"> f
+		<input type="checkbox" name="checkbox" value="f" onClick="result(this.form)"> g
+		<input type="checkbox" name="checkbox" value="g" onClick="result(this.form)"> h
+		<input type="checkbox" name="checkbox" value="h" onClick="result(this.form)"> i
+		<input type="checkbox" name="checkbox" value="i" onClick="result(this.form)">
+		<br>
+		<br>
+		<input id="txt" type="text" name="ok">
+
+	</form>
+</body>
+
+</html>

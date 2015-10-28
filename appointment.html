@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+	    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<title>预约</title>
+	</head>
+
+	<body id="appointment" class="bgColor">
+		<div class="container">
+			<form class="form-horizontal" action="">
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">学员基本情况</label>
+					<div class="col-sm-10">
+						<select name="" class="form-control ">
+							<option value="">学员性别</option>
+							<option value="">男</option>
+							<option value="">女</option>
+						</select>
+						<br />
+						<select name="" class="form-control">
+							<option value="">选择学员所处阶段</option>
+							<option value="">小学阶段</option>
+							<option value="">初中阶段</option>
+							<option value="">高中阶段</option>
+							<option value="">大学阶段</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">补课内容</label>
+					<div class="col-sm-10">
+						<textarea name="" class="form-control" rows="" cols="" placeholder="请填写"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">简述学员学习情况</label>
+					<div class="col-sm-10">
+						<input type="checkbox" name="checkbox" value="成绩优秀待拔尖" onClick="result(this.form)"> 成绩优秀待拔尖
+						<input type="checkbox" name="checkbox" value="普通待提高" onClick="result(this.form)"> 普通待提高
+						<input type="checkbox" name="checkbox" value="基础差" onClick="result(this.form)"> 基础差
+						<input type="checkbox" name="checkbox" value="应付考试" onClick="result(this.form)"> 应付考试
+						<input type="checkbox" name="checkbox" value="应付考级" onClick="result(this.form)"> 应付考级
+						<input type="checkbox" name="checkbox" value="应付比赛" onClick="result(this.form)"> 应付比赛
+						<textarea rows="2" cols="3" class="form-control" name="ok" id="txt"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">上课安排</label>
+					<div class="col-sm-10">
+						<select name="" class="form-control" style="width: 165px;display: inline-block;">
+							<option value="">选择上课计划</option>
+							<option value="">长期补课</option>
+							<option value="">短期补习</option>
+							<option value="">寒暑期补习</option>
+							<option value="">寒暑期陪读</option>
+						</select>
+						<select name="" class="form-control" style="width: 165px;display: inline-block;">
+							<option value="">选择每周上课次数</option>
+							<option value="">每周1次</option>
+							<option value="">每周2次</option>
+							<option value="">每周3次</option>
+							<option value="">每周4次</option>
+							<option value="">每周1-2次</option>
+							<option value="">每周3-4次</option>
+							<option value="">每周5-6次</option>
+							<option value="">每周6-7次</option>
+							<option value="">电话协商</option>
+						</select>
+						<select name="" class="form-control" style="width: 165px;display: inline-block;">
+							<option value="">每次上课时长</option>
+							<option value="">每次上1小时</option>
+							<option value="">每次上2小时</option>
+							<option value="">每次上3小时</option>
+							<option value="">每次上4小时</option>
+							<option value="">每次上半天</option>
+							<option value="">每次上整天</option>
+							<option value="">电话协商</option>
+						</select>
+						<select name="" class="form-control" style="width: 165px;display: inline-block;margin-top: 10px;">
+							<option value="">希望授课时段</option>
+							<option value="">上午授课</option>
+							<option value="">下午授课</option>
+							<option value="">晚上授课</option>
+							<option value="">可灵活安排</option>
+							<option value="">电话协商</option>
+						</select>
+						<select name="" class="form-control" style="width: 165px;display: inline-block;margin-top: 10px;">
+							<option value="">选择期望课时费</option>
+							<option value="">电话协商</option>
+							<option value="">15-25/小时</option>
+							<option value="">25-55/小时</option>
+							<option value="">55-100/小时</option>
+							<option value="">100/小时</option>
+							<option value="">150/小时</option>
+							<option value="">300/小时</option>
+							<option value="">500/小时</option>
+						</select>
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">对教员要求</label>
+					<div class="col-sm-10">
+						<select name="" class="form-control" style="display: inline-block;width: 120px;margin-bottom: 10px;">
+							<option value="">教师性别</option>
+							<option value="">男</option>
+							<option value="">女</option>
+							<option value="">不限</option>
+						</select>
+						<select name="" class="form-control" style="display: inline-block;width: 120px;margin-bottom: 10px;">
+							<option value="">教师类型</option>
+							<option value="">在职教师</option>
+							<option value="">大学生</option>
+							<option value="">都可以</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">对教员要求</label>
+						<div class="col-sm-10">
+							<input type="checkbox" name="checkbox2" value="时间观念强" onClick="result2(this.form)"> 时间观念强
+							<input type="checkbox" name="checkbox2" value="普通话标准" onClick="result2(this.form)"> 普通话标准
+							<input type="checkbox" name="checkbox2" value="认真且有教案" onClick="result2(this.form)"> 认真且有教案
+							<input type="checkbox" name="checkbox2" value="责任心强" onClick="result2(this.form)"> 责任心强
+							<input type="checkbox" name="checkbox2" value="教学有方法" onClick="result2(this.form)"> 教学有方法
+							<input type="checkbox" name="checkbox2" value="有家教经验" onClick="result2(this.form)"> 有家教经验
+							<textarea rows="2" cols="3" class="form-control" name="ok2" id="txt2"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">联系方式</label>
+					<div class="col-sm-10">
+						<select name="P" id="" class="form-control" style="width: 130px;display: inline-block;"></select>
+						<select name="C" id="" class="form-control" style="width: 100px;display: inline-block;"></select>
+						<script type="text/javascript" defer>
+							new PCAS("P", "C", "广东省", "广州市")
+						</script>
+						<input type="text" class="form-control" placeholder="如：广州塔附近" id="" value="" style="width: 335px;display: inline-block;" />
+						<input type="text" class="form-control" placeholder="称呼/如：王小姐" name="" id="" value="" style="margin-top: 10px;" />
+						<input type="tel" class="form-control" placeholder="联系电话" name="" id="" value="" style="margin-top: 10px;" />
+					</div>
+
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-primary" name="" id="" value="" />提交</button>
+						<button type="reset" class="btn btn-toolbar" name="" id="" value="" />重置</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<p>© 2015 gsgsfgs.com 广东财经大学 信息学院 软件工程</p>
+		</div>
+
+		<script type="text/javascript">
+			function result(form) {
+				var a = document.getElementById("txt");
+				a.value = "";
+				for (var i = 0; i < form.elements.length; i++) {
+					var e = form.elements[i];
+					if (e.name == "checkbox" && e.checked == true) {
+						a.value = a.value + e.value + "    "
+					}
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function result2(form) {
+				var aa = document.getElementById("txt2");
+				aa.value = "";
+				for (var i = 0; i < form.elements.length; i++) {
+					var ee = form.elements[i];
+					if (ee.name == "checkbox2" && ee.checked == true) {
+						aa.value = aa.value + ee.value + "    "
+					}
+				}
+			}
+		</script>
+	</body>
+
+</html>
